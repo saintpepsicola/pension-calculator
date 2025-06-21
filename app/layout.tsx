@@ -16,7 +16,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={cn("h-full w-full", manrope.variable)}>
+    <html 
+      lang="en" 
+      className={cn("h-full w-full", manrope.variable)}
+      suppressHydrationWarning
+    >
       <body className="relative h-full w-full font-sans antialiased">
         <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
 

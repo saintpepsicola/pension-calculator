@@ -7,13 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "print:code": "node scripts/printCode.js",
+    "print:code:out": "node scripts/printCode.js code-output.txt"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
     "@radix-ui/react-label": "2.1.1",
     "@radix-ui/react-progress": "latest",
     "@radix-ui/react-slot": "1.1.1",
+    "@react-three/postprocessing": "^3.0.4",
     "@tailwindcss/postcss": "^4.1.10",
     "add": "^2.0.6",
     "autoprefixer": "^10.4.20",
